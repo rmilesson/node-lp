@@ -21,9 +21,9 @@ Then, require the module
 
 ## Usage
 
-    lp.queue(fileLocation, [options], listener)
+    lp.queue(fileLocation, callback)
 
-    lp.queue(buffer, [options], listener)
+    lp.queue(buffer, callback)
 
     lp.stop(jobid)
 
