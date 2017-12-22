@@ -1,36 +1,44 @@
-# Node lp
+# node-lp
 
 node-lp is an adapter to the unix 'lp(1)' command allowing files to be submitted for printing or altering a pending job. This will only work on Linux at the moment however if anyone wants a windows port then that might happen.
 
+## Requirements
+
+You need `cups` installed to use this module.
+
 ## Installation
 
-Note: you need `cups` installed to use.
+node-lp can then be installed via NPM
 
-Node-lp can then be installed via NPM
-
-    npm install lp
+```sh
+npm install node-lp
+```
 
 Then, require the module
 
-    var lp = require("lp-client");
-    var options = {};
+```js
+var lp = require("node-lp");
+var options = {};
 
-    printer = lp(options);
-    printer.queue ("Hello");
+printer = lp(options);
 
+printer.queue ("/tmp/test-file.pdf");
+```
 
 ## Usage
 
-    lp.queue(fileLocation, callback)
+```js
+lp.queue(fileLocation, callback)
 
-    lp.queue(buffer, callback)
+lp.queue(buffer, callback)
 
-    lp.stop(jobid)
+lp.stop(jobid)
 
-    lp.resume(jobid)
+lp.resume(jobid)
 
-    lp.hold(jobid)
-
+lp.hold(jobid)
+```
 
 ## Licence
+
 Licensed under the [New BSD License](http://opensource.org/licenses/bsd-license.php)
