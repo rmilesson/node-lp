@@ -1,6 +1,6 @@
 {
   "name": "node-lp",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "author": "Tom Gallacher",
   "description": "node-lp is an adapter to the unix lp(1) command allowing files to be subitted for printing or altering a pending job.",
   "repository": {
