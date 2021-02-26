@@ -39,6 +39,18 @@ lp.resume(jobid)
 lp.hold(jobid)
 ```
 
+## Options Available
+
+Option | Description
+------ | ----------
+destination | Prints files to the named printer.
+hostname | Chooses an alternate server.
+port | Chooses an alternate server port (only use if hostname is specified).
+username | Specifies the username to use when connecting to the server.
+encryption | Forces encryption when connecting to the server.
+digitalCopy | Allows logging of what excatly is being printed.
+args | Pass custom arguments to lp (in array).
+
 ## Licence
 
 Licensed under the [New BSD License](http://opensource.org/licenses/bsd-license.php)
